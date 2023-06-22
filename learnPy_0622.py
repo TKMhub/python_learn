@@ -65,8 +65,37 @@ print(d)
 d = {x: y for x, y in zip(w,f)}
 print(d)
 
+print("集合内包表記####################################")
+s = set()
 
+for i in range(10):
+    s.add(i)
 
+print(s)
+
+s = {i for i in range(10) if i % 2}
+print(s)
+
+def g():
+    for i in range(10):
+        yield i
+
+# g = g()
+# print(type(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
+# print(next(g))
+g = g()
+g = tuple(i for i in range(10) if i % 2 == 0)
+print(type(g))
+print(type(g))
+print(type(g))
+print(type(g))
+print(g)
+print(g)
+print(g)
+print(g)
 
 
 
