@@ -113,7 +113,23 @@ try:
 except UppercaseError as exc:
     print('This is my fault.Go next')
 
+print("__init__ __all__####################################")
+from lesson_package.talk import human
+from lesson_package.talk import animal
+from lesson_package.talk import *
 
+print(animal.sing())
+print(animal.cry())
+
+print(human.sing())
+print(human.cry())
+
+新しいバージョンでも古いバージョンでも対応できるような書き方
+try:
+    from lesson_package.tools import utils
+except ImportError:
+    from lesson_package import utils
+utils.say_twice('word')
 
 
 
