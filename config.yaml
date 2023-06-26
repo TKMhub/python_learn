@@ -1,0 +1,6 @@
+db_server:
+  host: 123.34.45
+  port: 39485
+web_server:
+  host: 123.34.45
+  port: 80
