@@ -247,16 +247,69 @@ if os.path.exists(file_name):
 # with open(file_name, 'w') as f:
 #     f.write('test')
 
+# だめ
+x = 1;
+y = 2;
+
+# 改行せよ（80まで）
+x = 'aasadnsadjfndsnvndsfvnadvjnkajdnvkannvdsnckvnkkjdnvndkvnkdnfvkj nfdknv kjndfnvkfdnvjkndknvkjndfvkjndjkfvnkjndsvkjnvndv'
+
+def test_funcp(x, y, z, fsdmfvmd,
+              lvmds,lmfvsadmcmdsacvmdkvmpamvpamdvopmfdoivsjisjvoijsadiojijsdjmspdamjpsdmjmlvm='test'):
+    print(1)
+
+    """
+    :param x:
+    URLはOK
+    See details at : http://dclknadsknvkldanvnadld.com/asdfpepovmdsnvksndfkvlnsdklnvklndsfklv/dafvjposjvposbmmgvpobmwbopmsprombvpoermwbmrbvopsmrvopmewopmv
+    """
+# 無駄な（）等はつけない
+if (x and y):
+    print('test')
+
+# インデントは４つ
+if x and y:
+    print('test')
+
+    x = {
+        'test': 'sss'
+    }
+
+    x, y = y, x
+
+# 関数やクラスごの改行は2行
+def test_funcp(x, y, z, fsdmfvmd,
+              lvmds,lmfvsadmcmdsacvmdkvmpamvpamdvopmfdoivsjisjvoijsadiojijsdjmspdamjpsdmjmlvm='test'):
+    print(1)
 
 
+def test_funcp(x, y, z, fsdmfvmd,
+              lvmds,lmfvsadmcmdsacvmdkvmpamvpamdvopmfdoivsjisjvoijsadiojijsdjmspdamjpsdmjmlvm='test'):
+    print(1)
 
 
+long_word = []
+for word in ['dsfsd', 'vnmkldmv', 'isdiocns']:
+    long_word.append("{}dslcifjaslicj".format(word))
+new_long_word = ''.join(long_word)
 
+# まずはシングルクウォート
+# ただし、シングルクウォートを入れる時にはダブルクウォート
+# 文字を代入する際には特別にダブルクウォートにする
 
+# TODO (tkita) Use locking mechanical
 
+if x:
+    print('exit')
 
+if x: print('exit')
 
+# クラスの場合はキャメルケース
+# 関数名はスネークケース
+# 変数名もスネークケース
 
+# グローバル変数は大文字
+# 書き換え禁止!!
 
 
 
