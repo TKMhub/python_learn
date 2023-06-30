@@ -73,46 +73,62 @@ print("ロガー#############")
 #     'message': 'Api call is failed'
 # })
 
-from email import message
-from email.mime import multipart
-from email.mime import text
-import smtplib
+# import logging
+# from email import message
+# from email.mime import multipart
+# from email.mime import text
+# import smtplib
+#
+# smtp_host = 'smtp.live.com'
+# smtp_port = 587
+# from_email = 'xxx@hotmail.com'
+# to_email = 'xxx@hotmail.com'
+#
+# username =  'xxx@hotmail.com'
+# password =  'dsifvoifjv'
+#
+# logger = logging.getLogger('email')
+# logger.setLevet(logging.CRITICAL)
+#
+# logger.addHandler(logging.handlers.SMTPHandler(
+#     (smtp_host, smtp_port), from_email, to_email,
+#     subject='Admin test log',
+#     credentials=(username, password),
+#     secure=(None, None, None),
+#     timeout=20
+# ))
+#
+# logger.info('test')
+# logger.critical('critical')
+#######################################
+#
+# # msg = message.EmailMessage()
+# msg = multipart.MIMEMultipart()
+# # msg.set_content('Test email')
+#
+# msg.attach(text.MIMEText('Test email', 'plain'))
+#
+# with open('lesson.py', 'r') as f:
+#     attachment = text.MIMEText(f.read(), 'plain')
+#     attachment.add_header(
+#         'Content-Disposition', 'attachment',
+#         filename = 'lesson.txt'
+#     )
+#     msg.attach(attachment)
+#
+# msg['Subject'] = 'Test email sub'
+# msg['From'] = from_email
+# msg['to'] = to_email
+#
+# server = smtplib.SMTP(smtp_host, smtp_port)
+# server.ehlo()
+# server.starttls()
+# server.ehlo()
+# server.login(username, password)
+# server.send_message(msg)
+# server.quit()
 
-smtp_host = 'smtp.live.com'
-smtp_port = 587
-from_email = 'xxx@hotmail.com'
-to_email = 'xxx@hotmail.com'
-
-username =  'xxx@hotmail.com'
-password =  'dsifvoifjv'
-
-# msg = message.EmailMessage()
-msg = multipart.MIMEMultipart()
-# msg.set_content('Test email')
-
-msg.attach(text.MIMEText('Test email', 'plain'))
-
-with open('lesson.py', 'r') as f:
-    attachment = text.MIMEText(f.read(), 'plain')
-    attachment.add_header(
-        'Content-Disposition', 'attachment',
-        filename = 'lesson.txt'
-    )
-    msg.attach(attachment)
-
-msg['Subject'] = 'Test email sub'
-msg['From'] = from_email
-msg['to'] = to_email
-
-server = smtplib.SMTP(smtp_host, smtp_port)
-server.ehlo()
-server.starttls()
-server.ehlo()
-server.login(username, password)
-server.send_message(msg)
-server.quit()
-
-
+print("virtualenv#############")
 
 
 
